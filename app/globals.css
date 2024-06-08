@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb:29, 32, 33;
+    --background-end-rgb: 29, 32, 33;
   }
 }
 
@@ -24,6 +24,51 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Fira Mono';
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  height: 25px;
+  width: 25px;
+  font-size: 22.5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 1.2;
+  background: #1d2021;
+  color: #a89984
+}
+
+.header-wrapper {
+  color: #282828;
+  background-color: #a89984;
+  padding: 0 10px;
+}
+
+.screen-wrapper {
+  padding: 10px;
+}
+
+.cta-blue-outline {
+  border: 3px solid #458588;
+  width: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+}
+
+#home-description {
+  color: #458588;
+}
+
+#arrow-down {
+  color: #458588;
 }
 
 @layer utilities {
